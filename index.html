@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="wobbMDC1LVk_kgdft6XX5PPnm7q3nodja7fV9axotWU" />
+<title>GRAN VELLUTO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Noise -->
+<div id="noise"></div>
+
+<!-- Canvas -->
+<canvas id="canvas"></canvas>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-wordmark">
+      VELLUTO
+      <div class="pre-fill">VELLUTO</div>
+    </div>
+    <div class="pre-bar"><div class="pre-progress" id="preProgress"></div></div>
+    <div class="pre-pct" id="preCount">0%</div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav id="nav">
+  <div class="nav-logo">GRAN VELLUTO</div>
+  <ul class="nav-links">
+    <li><a href="#story" class="nav-link">Storia</a></li>
+    <li><a href="#menu" class="nav-link">Menu</a></li>
+    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+    <li><a href="#reservation" class="nav-link">Reserve</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#reservation" class="nav-cta">Book a Table</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg-text">GRAN</div> 
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-dot"></div>
+      Fine Italian Dining — Milano — Est. 1997
+    </div> 
+    <h1 class="hero-title">
+      <div class="ht-line"><span>La dolce</span></div>
+      <div class="ht-line"><span>Vita</span></div>
+      <div class="ht-line"><span>Served Nightly</span></div>
+    </h1>
+    <p class="hero-sub">A temple of Milanese tradition and modern Italian craft. Handmade pasta, wood-fired meats, and a cellar of 400 wines served in an atmosphere of unhurried warmth.</p>
+    <div class="hero-actions">
+      <a href="#reservation" class="btn-primary"><span>Reserve a Table</span></a>
+      <a href="#story" class="btn-secondary">Explore Our Story</a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <div>
+      <div class="hero-meta-label">12 Tables Per Evening</div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+    </div>
+    <div>
+      <div class="hero-meta-label">Milano, Italy</div>
+    </div>
+  </div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item accent">★ Three Michelin Stars</span>
+    <span class="ticker-item">Fine Italian Dining — Milano</span>
+    <span class="ticker-item accent">Est. 1997</span>
+    <span class="ticker-item">Handmade Pasta Daily</span>
+    <span class="ticker-item accent">400 Wines In Cellar</span>
+    <span class="ticker-item">12 Tables Per Evening</span>
+    <span class="ticker-item accent">Open Tuesday to Sunday</span>
+    <span class="ticker-item">Brera District, Milano</span>
+    <span class="ticker-item accent">★ Three Michelin Stars</span>
+    <span class="ticker-item">Fine Italian Dining — Milano</span>
+    <span class="ticker-item accent">Est. 1997</span>
+    <span class="ticker-item">Handmade Pasta Daily</span>
+    <span class="ticker-item accent">400 Wines In Cellar</span>
+    <span class="ticker-item">12 Tables Per Evening</span>
+    <span class="ticker-item accent">Open Tuesday to Sunday</span>
+    <span class="ticker-item">Brera District, Milano</span>
+  </div>
+</div>
+
+<!-- Story -->
+<section class="manifesto" id="story">
+  <div class="manifesto-side">
+    <div class="manifesto-eyebrow">La Nostra Storia</div>
+    <div class="manifesto-num">I</div>
+  </div>
+  <div class="manifesto-body">
+    <div class="manifesto-line ml"><span>In Italian tradition,</span></div>
+    <div class="manifesto-line ml"><span>the table is <em>sacred.</em></span></div>
+    <div class="manifesto-line ml"><span>It is where families—</span></div>
+    <div class="manifesto-line ml"><span>are built,</span></div>
+    <div class="manifesto-line ml"><span>love is declared,</span></div>
+    <div class="manifesto-line ml"><span>and the day finally exhales.</span></div>
+    <div class="manifesto-detail md">
+      Osteria Notte was born in 1997 in the Brera district of Milano. Founded by <em>Chef Emilio Conti</em> using his grandmother's recipes, the kitchen has never chased trends — only truth. Today, his daughter Chef Giulia Conti leads the kitchen with the same devotion. Every dish is an act of memory. Every evening is an invitation.
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<div class="stats-row">
+  <div class="stat-cell sc">
+    <span class="stat-number">6<!--<span class="stat-sup">*</span> --></span>
+    <span class="stat-lbl">Menus</span>
+    <span class="stat-sub">Each one a tradition</span>
+  </div>
+  <div class="stat-cell sc">
+    <span class="stat-number">12</span>
+    <span class="stat-lbl">Tables Per Night</span>
+    <span class="stat-sub">Warm intimacy</span>
+  </div>
+  <div class="stat-cell sc">
+    <span class="stat-number">3</span>
+    <span class="stat-lbl">Hours</span>
+    <span class="stat-sub">Of unhurried pleasure</span>
+  </div>
+  <div class="stat-cell sc">
+    <span class="stat-number">★3</span>
+    <span class="stat-lbl">Michelin Stars</span>
+    <span class="stat-sub">Awarded consecutively</span>
+  </div>
+</div>
+
+<!-- Menu -->
+<section class="courses" id="menu">
+  <div class="courses-header">
+    <div>
+      <div class="section-label">Il Menu</div>
+      <div class="courses-title ct" style="margin-top:1.5rem">
+        <span>6 Acts of </span>
+        <span>Flavour</span>
+      </div>
+    </div>
+    <p class="courses-subtitle cs">Each course a tradition. Each plate a memory. Seasonal. Handmade. Always honest.</p>
+  </div>
+  <div class="course-list">
+    <div class="course-item ci" style="transition-delay:0s">
+      <div class="course-num">I</div>
+      <div class="course-info">
+        <div class="course-name">To begin</div>
+        <div class="course-desc">Bruschetta, burrata, charcuterie the table awakens</div>
+      </div>
+      <div class="course-tag">Antipasti</div>
+    </div>
+    <div class="course-item ci" style="transition-delay:0.07s">
+      <div class="course-num">II</div>
+      <div class="course-info">
+        <div class="course-name">Handmade pasta, risotto</div>
+        <div class="course-desc">Tagliatelle al ragù, risotto al tartufo, pappardelle al cinghiale</div>
+      </div>
+      <div class="course-tag">Primi</div>
+    </div>
+    <div class="course-item ci" style="transition-delay:0.14s">
+      <div class="course-num">III</div>
+      <div class="course-info">
+        <div class="course-name">Wood-fired meats</div>
+        <div class="course-desc">CBistecca alla Fiorentina, branzino al forno, ossobuco Milanese</div>
+      </div>
+      <div class="course-tag">Secondi</div>
+    </div>
+    <div class="course-item ci" style="transition-delay:0.21s">
+      <div class="course-num">IV</div>
+      <div class="course-info">
+        <div class="course-name">TItalian cheese</div>
+        <div class="course-desc">Parmigiano Reggiano, Gorgonzola, Pecorino — served with honey and walnuts</div>
+      </div>
+      <div class="course-tag">SFormaggi</div>
+    </div>
+    <div class="course-item ci" style="transition-delay:0.28s">
+      <div class="course-num">V</div>
+      <div class="course-info">
+        <div class="course-name">Desserts & digestivo</div>
+        <div class="course-desc">Tiramisu, panna cotta, cannoli Siciliani — dolcezza fino alla fine</div>
+      </div>
+      <div class="course-tag">Dolci</div>
+    </div>
+    <div class="course-item ci" style="transition-delay:0.35s">
+      <div class="course-num">VI</div>
+      <div class="course-info">
+        <div class="course-name">The Italian goodbye</div>
+        <div class="course-desc">Espresso, amaretto, limoncello — the Italian way to say goodnight</div>
+      </div>
+      <div class="course-tag">Caffè & Amaro</div>
+    </div>
+  </div>
+</section>
+
+<!-- Visual Grid -->
+ <!-- Gallery -->
+<div class="visual-grid" id="gallery">
+  <div class="vg-header">
+    <div class="section-label">Il Ambiente</div>
+    <div class="vg-title vgt" style="margin-top:1.5rem">Gallery</div>
+  </div>
+  <div class="vg-grid">
+    <div class="vg-cell vc">
+      <img class="vg-img" src="https://i.postimg.cc/hGwzM7yL/gran-velluto-2-(1).jpg" alt=" Main Dinning  Room">
+      <div class="vg-caption">
+        <span class="vg-cap-num">The Main Room</span>
+        <div class="vg-cap-title">La sala
+        </div>
+        <div class="vg-cap-sub">Warm candlelight, exposed brick, the hum of good conversation</div>
+      </div>
+    </div>
+    <div class="vg-cell vc">
+      <img class="vg-img" src="https://i.postimg.cc/xTRXhZpL/gran-velluto-3.jpg" alt="bar">
+      <div class="vg-caption">
+        <span class="vg-cap-num">The Bar</span>
+        <div class="vg-cap-title">IL Bar</div>
+        <div class="vg-cap-sub">400 wines, classic Negroni, aperitivo hour from 18:00</div>
+      </div>
+    </div>
+    <div class="vg-cell vc">
+      <img class="vg-img" src="https://i.postimg.cc/VLLfrk41/gran-velluto-4.jpg" alt="Kichen">
+      <div class="vg-caption">
+        <span class="vg-cap-num">The Kitchen</span>
+        <div class="vg-cap-title">La Cucina</div>
+        <div class="vg-cap-sub">Open kitchen, wood fire, handmade pasta rolled fresh every morning</div>
+      </div>
+    </div>
+    <div class="vg-cell vc">
+      <img class="vg-img" src="https://i.postimg.cc/SKWF1BVL/gran-velluto-5.jpg" alt="Wine Cellar">
+      <div class="vg-caption">
+        <span class="vg-cap-num">The  Wine Cellar</span>
+        <div class="vg-cap-title">La Cantina</div>
+        <div class="vg-cap-sub">A curated cellar of Italian and European vintages, sommelier guided</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quote -->
+<section class="quote-section">
+  <div class="quote-bg">GRAN</div>
+  <div class="quote-inner">
+    <div class="quote-stars">★ ★ ★</div>
+    <blockquote class="quote-text qt">
+      "The finest Italian table outside of Rome. <em>Gran Velluto</em> does not serve dinner — it serves belonging."
+    </blockquote>
+    <div class="quote-source qs">— Corriere della Sera, Restaurant of the Year 2026</div>
+  </div>
+</section>
+
+<!-- Reservation -->
+<section class="reservation" id="reservation">
+  <div class="res-grid">
+    <div class="res-left">
+      <div class="res-eyebrow re">Reservations</div>
+      <div class="res-title rt"><span>JOIN</span><span>us for evening</span></div>
+      <p class="res-text rtx">We welcome twelve tables each evening. Reservations are encouraged. Private dining for groups of up to 16 is available upon request.</p>
+      <div class="res-details">
+        <div class="res-detail-row rd">
+          <div class="res-detail-label">Location</div>
+          <div class="res-detail-value">Via Brera 14, 20121 Milano, Italy</div>
+        </div>
+        <div class="res-detail-row rd" style="transition-delay:0.1s">
+          <div class="res-detail-label">Hours</div>
+          <div class="res-detail-value">Tuesday–Sunday · Aperitivo 18:00 · Dinner 19:30</div>
+        </div>
+        <div class="res-detail-row rd" style="transition-delay:0.2s">
+          <div class="res-detail-label">Investment</div>
+          <div class="res-detail-value">€95 tasting menu per guest</div>
+        </div>
+        <div class="res-detail-row rd" style="transition-delay:0.3s">
+          <div class="res-detail-label">Policy</div>
+          <div class="res-detail-value">Dietary needs accommodated individually</div>
+        </div>
+      </div>
+    </div>
+    <div class="res-right rr">
+      <form class="res-form" onsubmit="handleSubmit(event)">
+        <div class="form-section-label">Request Entry</div>
+        <div class="form-row">
+          <div class="form-field">
+            <input type="text" class="form-input" id="name" placeholder=" " required>
+            <label class="form-lbl" for="name">Full Name</label>
+          </div>
+          <div class="form-field">
+            <input type="email" class="form-input" id="email" placeholder=" " required>
+            <label class="form-lbl" for="email">Email Address</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <select class="form-select" id="guests" required>
+              <option value="" disabled selected></option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3-6 Guests</option>
+              <option value="4">7-9+ Guests</option>
+            </select>
+            <label class="form-lbl" for="guests">Party Size</label>
+          </div>
+          <div class="form-field">
+            <input class="form-select" id="date" required>
+            <label class="form-lbl" for="quarter">Preferred Date</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <textarea class="form-textarea" id="reason" placeholder=" " rows="4"></textarea>
+          <label class="form-lbl" for="reason">Any occasion or special requests?</label>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn"><span id="btnText">Confirm Reservation</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <span class="footer-logo">GRAN VELLUTO</span>
+      <p class="footer-tagline">A celebration of Italian tradition in the heart of Milano. Where every evening feels like coming home.</p>
+      <div class="footer-social">
+        <a href="#">IG</a>
+        <a href="#">TW</a>
+        <a href="#">PR</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="#story">Storia</a></li>
+        <li><a href="#menu">Il Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reservations</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Connect</div>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Press Kit</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Collaborations</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Gran velluto — All rights reserved</span>
+    <div class="footer-award">
+      <div class="award-badge">★★★</div>
+      Michelin Guide Milano 2025
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
