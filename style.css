@@ -219,7 +219,12 @@ nav.scrolled{
   white-space:nowrap;
   z-index:1;
 }
-.hero-content{position:relative;z-index:2;}
+.hero-content{
+  position:relative;
+  /* width: 100%; */
+  z-index:2;
+  /* margin-top: 60px; */
+}
 .hero-badge{
   display:inline-flex;align-items:center;gap:1rem;
   font-family:"Almendra", serif;
@@ -228,7 +233,7 @@ nav.scrolled{
   text-transform:uppercase;
   letter-spacing:0.3em;
   color:var(--acid);
-  margin-bottom:3rem;
+  /* margin-bottom:3rem; */
   opacity:0;
   animation:fadeUp 1s var(--ease) 3.5s forwards;
 }
@@ -244,10 +249,10 @@ nav.scrolled{
   font-family: "Almendra", serif;
   font-weight:900;
   /* font-size:clamp(3.5rem,9vw,11rem); */
-  font-size:clamp(6rem,14vw,14rem);
+  font-size:clamp(4rem,9vw,11rem);
   line-height:0.9;
   letter-spacing:-0.05em;
-  margin-top: 0.5em;
+  margin-top: 0.7em; 
   margin-bottom:0.3em;
 }
 .ht-line{display:block;overflow:hidden;}
@@ -261,17 +266,22 @@ nav.scrolled{
 .ht-line:nth-child(3) span{animation-delay:2.9s;}
 @keyframes lineUp{to{transform:translateY(0) skewY(0);}}
 .hero-sub{
-  font-size:clamp(1rem,2.2vw,1.35rem);
+  font-size:clamp(0.5rem,1.5vw,1.2rem);
   font-style:italic;
   color:var(--matter-muted);
   max-width:520px;
-  margin:2.5rem auto 4rem;
+  /* margin-top:2.5rem auto 4rem; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   line-height:1.8;
   opacity:0;
   filter:blur(8px);
   animation:blurIn 1.5s ease 3.2s forwards;
 }
-@keyframes blurIn{to{opacity:1;filter:blur(0);}}
+@keyframes blurIn{
+  to{opacity:1;
+  filter:blur(0);}
+  }
 .hero-actions{
   display:flex;align-items:center;gap:2.5rem;
   opacity:0;
@@ -357,7 +367,7 @@ nav.scrolled{
 }
 .ticker-track{
   display:flex;gap:0;
-  animation:ticker 30s linear infinite;
+  animation:ticker 45s linear infinite;
   width:max-content;
 }
 .ticker-item{
